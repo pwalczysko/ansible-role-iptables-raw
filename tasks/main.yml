@@ -5,7 +5,7 @@
   become: true
   ansible.builtin.dnf:
     update_cache: true
-    name: iptables-services
+    name: iptables-nft-services
     state: present
 
 - name: iptables-raw | get list of services
